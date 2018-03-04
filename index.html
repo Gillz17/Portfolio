@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Nanum+Gothic|Quicksand" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="icon" href="images/scranton_logo.png">
+    <title>Zachary McGill</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="header">
+      <img src="http://sites.vschool.io/code-art-school/img/code-2.jpg" alt="HeaderImg" width="100%" height="600px">
+      <div class="header-text"><h2>Hello, <br>this is my portfolio</h2></div>
+    </div>
+    <div id="navbar">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#">Zachary McGill</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <div class="content">
+        <h4 id="about">About</h4>
+        <h5>I currently attend the University of Scranton, and major in Computer Science.<br>
+        My expected graduation date is May 2018.</h5>
+      </div>
+      <div class="content">
+        <h4 id="skills">Skills</h4>
+        <h5>I have experience in all of the following languages or systems.</h5>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="languages-tab" data-toggle="tab" href="#languages" role="tab" aria-controls="languages" aria-selected="true">Languages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="OS-tab" data-toggle="tab" href="#OS" role="tab" aria-controls="OS" aria-selected="false">Operating Systems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="db-tab" data-toggle="tab" href="#DB" role="tab" aria-controls="DB" aria-selected="false">Database Systems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Exp-tab" data-toggle="tab" href="#EXP" role="tab" aria-controls="EXP" aria-selected="false">Experience with</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="languages" role="tabpanel" aria-labelledby="languages-tab">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Java</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>C/C++</li>
+              <li>Ruby</li>
+              <li>JavaScript</li>
+              <li>JQuery</li>
+              <li>Visual Basic</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="OS" role="tabpanel" aria-labelledby="OS-tab">
+            <ul>
+              <li>Linux</li>
+              <li>Windows</li>
+              <li>FreeBSD</li>
+              <li>Mac OS</li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="DB" role="tabpanel" aria-labelledby="DB-tab">
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div class="tab-pan fade" id="EXP" role="tabpanel" aria-labelledby="EXP-tab">
+            <ul>
+              <li>Computer hardware</li>
+              <li>Networking Concepts</li>
+                <ul>
+                  <li>TCP/IP</li>
+                </ul>
+              <li>Development Environments</li>
+                <ul>
+                  <li>Android Studio</li>
+                  <li>Ecplise</li>
+                  <li>Notepad++</li>
+                  <li>Visual Studio</li>
+                </ul>
+              <li>Tools</li>
+                <ul>
+                  <li>GitHub</li>
+                  <li>pUTTY</li>
+                  <li>Google Firebase</li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--The Footer with all of my contact info. -->
+    <footer class="container-fluid" id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6" style="font-family:'Quicksand', sans-serif">
+            <h3 style="color:white">Contact Me</h3>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="firstName"
+                  placeholder="Enter your first name here">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="lastName"
+                  placeholder="Enter your last name here">
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email"
+                placeholder="Enter your email here">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message here"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+            </div>
+            <div class="col-sm-6" style="font-family:'Quicksand', sans-serif">
+              <h3 style="color:white">Follow Me:</h3>
+              <ul class="socialMedia">
+                <li><i class="fab fa-linkedin"></i>&nbsp&nbsp<a href="#" class="mediaLinks" target="_blank">LinkedIn</a></li>
+                <li><i class="fab fa-github"></i>&nbsp&nbsp<a href="https://github.com/Gillz17" class="mediaLinks" target="_blank">GitHub</a></li>
+                <li><i class="fab fa-facebook-square"></i>&nbsp&nbsp<a href="https://www.facebook.com/zmcgill3" class="mediaLinks" target="_blank">Facebook</a></li>
+              <ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+    });
+  </script>
+  </body>
+</html>

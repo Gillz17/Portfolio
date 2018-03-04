@@ -1,0 +1,101 @@
+.header {
+  background-color: #f1f1f1;
+  padding: 0px;
+  text-align: center;
+}
+
+.content {
+  padding: 16px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 50px;
+}
+
+.header-text{
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+}
+
+.navbar-dark{
+    background-color: #37474f;
+    font-family: 'Quicksand', sans-serif;
+    z-index: 99;
+}
+.nav-link{
+  text-align: right;
+}
+
+footer{
+  background-color: #102027;
+  padding: 15px;
+  z-index: -2;
+}
+
+.form-control,.form-control:focus {
+    border: 0;
+    background-color: #102027;
+    color: white;
+    box-shadow: none !important;
+}
+
+.btn-primary{
+  background-color: #102027;
+  border-color: white;
+  margin-left: 250px;
+  margin-bottom: 15px;
+}
+
+.btn-primary:hover{
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.btn-primary:active{
+  background-color: #ff9800 !important;
+  outline-color: #ff9800 !important;
+  box-shadow: none !important;
+}
+
+.socialMedia{
+  list-style: none;
+}
+
+.mediaLinks, .mediaLinks:active{
+  color: white;
+  margin-right: 2.5px;
+}
+
+.mediaLinks:hover{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.fa-facebook-square{
+  color:#3b5998;
+}
+
+.fa-github, .fa-google-plus-g, .fa-copyright{
+  color:white;
+}
+
+.fa-linkedin{
+  color:#0077B5;
+}
+
+.fa-reddit{
+  color:#ff4500;
+}
