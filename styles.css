@@ -49,6 +49,17 @@ footer{
     color: white;
     box-shadow: none !important;
 }
+.btn-primary{
+  background-color: white;
+  border-color: black;
+  color:black;
+}
+
+.btn-primary:hover{
+  background-color: #ff9800;
+  border-color: white;
+  color: black;
+}
 
 .btn-secondary{
   background-color: #102027;
@@ -98,4 +109,9 @@ footer{
 
 .fa-reddit{
   color:#ff4500;
+}
+
+
+.card{
+  z-index: -1;
 }
