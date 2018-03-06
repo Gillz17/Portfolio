@@ -33,6 +33,10 @@
     font-family: 'Quicksand', sans-serif;
     z-index: 99;
 }
+
+.navbar-collapse{
+  z-index: 99;
+}
 .nav-link{
   text-align: right;
 }
@@ -110,7 +114,6 @@ footer{
 .fa-reddit{
   color:#ff4500;
 }
-
 
 .card{
   z-index: -1;
