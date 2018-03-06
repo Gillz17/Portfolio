@@ -50,20 +50,20 @@ footer{
     box-shadow: none !important;
 }
 
-.btn-primary{
+.btn-secondary{
   background-color: #102027;
   border-color: white;
   margin-left: 250px;
   margin-bottom: 15px;
 }
 
-.btn-primary:hover{
+.btn-secondary:hover{
   background-color: white;
   border-color: black;
   color: black;
 }
 
-.btn-primary:active{
+.btn-secondary:active{
   background-color: #ff9800 !important;
   outline-color: #ff9800 !important;
   box-shadow: none !important;
