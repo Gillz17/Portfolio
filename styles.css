@@ -83,11 +83,22 @@ footer{
   color:#ff4500;
 }
 
-.card{
-  z-index: 0;
-  position: relative;
+
+.btn-secondary{
+  background-color: #102027;
+  border-color: white;
+  margin-left: 250px;
+  margin-bottom: 15px;
 }
-cardButton{
-  z-index: 0;
-  position: relative;
+
+.btn-secondary:hover{
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.btn-secondary:active{
+  background-color: #ff9800 !important;
+  outline-color: #ff9800 !important;
+  box-shadow: none !important;
 }
