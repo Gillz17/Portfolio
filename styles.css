@@ -71,7 +71,7 @@ footer{
   color:#3b5998;
 }
 
-.fa-github, .fa-google-plus-g, .fa-copyright{
+.fa-github, .fa-google-plus-g{
   color:white;
 }
 
@@ -101,4 +101,8 @@ footer{
   background-color: #ff9800 !important;
   outline-color: #ff9800 !important;
   box-shadow: none !important;
+}
+
+.card-header{
+  background-color: #ff9800;
 }
