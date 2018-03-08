@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--Google font that is used throughout the website-->
     <link href="https://fonts.googleapis.com/css?family=Muli|Nanum+Gothic|Quicksand" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link rel="icon" href="images/scranton_logo.png">
     <title>Zachary McGill</title>
-    <link rel="stylesheet" href="styles.css">
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="header">
@@ -48,192 +51,27 @@
         <h5>I currently attend the University of Scranton, and major in Computer Science.<br>
         My expected graduation date is May 2018.</h5>
       </div>
+
       <div class="content">
         <h4 id="skills">Skills</h4>
         <h5>I have experience in all of the following languages or systems.</h5>
 
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="languages-tab" data-toggle="tab" href="#languages" role="tab" aria-controls="languages" aria-selected="true">Languages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="OS-tab" data-toggle="tab" href="#OS" role="tab" aria-controls="OS" aria-selected="false">Operating Systems</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="db-tab" data-toggle="tab" href="#DB" role="tab" aria-controls="DB" aria-selected="false">Database Systems</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="Exp-tab" data-toggle="tab" href="#EXP" role="tab" aria-controls="EXP" aria-selected="false">Experience with</a>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="languages" role="tabpanel" aria-labelledby="languages-tab">
-            <div class="py-5">
-              <div class="container">
-                <div class="row hidden-md-up">
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">HTML</h4>
-                        <div style="font-size:10em;">
-                          <i class="fab fa-html5"></i>
-                        </div>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title.</p>
-                        <a href="https://github.com/Gillz17/Portfolio" class="btn btn-primary">Code</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">CSS</h4>
-                        <div style="font-size:10em;">
-                          <i class="fab fa-css3"></i>
-                        </div>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="https://getbootstrap.com/assets/img/bootstrap-stack.png" alt="Bootstrap Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">Bootstrap</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                </div><br>
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Java Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">Java</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="http://advikbot.com/images/training/php-1.svg" alt="PHP Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">PHP</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png" alt="Python Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">Python</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                </div><br>
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="C++ Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">C/C++</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="https://pre00.deviantart.net/ec01/th/pre/i/2013/008/1/9/ruby_by_sakatagintoki117-d5qwq2l.png" alt="Ruby Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">Ruby</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png" alt="JS Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">JavaScript</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                </div><br>
-                <div class="row">
-                  <div class="col" style="margin-left:5rem;">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/JQuery_logo_text.svg/2000px-JQuery_logo_text.svg.png" alt="jQuery Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">jQuery</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col" style="margin-right:5rem;">
-                    <div class="card p-2">
-                      <img class="card-img-top" src="http://dl1.cbsistatic.com/i/2016/07/06/ee64e31c-b516-480a-9bc8-961cbff37c7f/46c21521f22bc48299c2072620b63ac7/imgingest-3961646527974304281.png" alt="VB Logo">
-                      <div class="card-block text-center">
-                        <h4 class="card-title">Visual Basic</h4>
-                        <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-                        <a href="#" class="card-link">link</a>
-                      </div>
-                    </div>
-                  </div>
-              </div>
+        <div class="card">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h4 class="card-title">TITLE</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a id="cardButton" href="https://www.google.com" class="btn btn-primary">Card Link</a>
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="OS" role="tabpanel" aria-labelledby="OS-tab">
-          <ul>
-            <li>Linux</li>
-            <li>Windows</li>
-            <li>FreeBSD</li>
-            <li>Mac OS</li>
-          </ul>
-        </div>
-        <div class="tab-pane fade" id="DB" role="tabpanel" aria-labelledby="DB-tab">
-          <ul>
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
-            </ul>
-          </div>
-        <div class="tab-pan fade" id="EXP" role="tabpanel" aria-labelledby="EXP-tab">
-          <ul>
-            <li>Computer hardware</li>
-            <li>Networking Concepts</li>
-              <ul>
-                <li>TCP/IP</li>
-              </ul>
-            <li>Development Environments</li>
-              <ul>
-                <li>Android Studio</li>
-                <li>Ecplise</li>
-                <li>Notepad++</li>
-                <li>Visual Studio</li>
-              </ul>
-            <li>Tools</li>
-              <ul>
-                <li>GitHub</li>
-                <li>pUTTY</li>
-                <li>Google Firebase</li>
-              </ul>
-          </ul>
-        </div>
+
+
+      <div style="height:1000px;">
+
       </div>
-    </div>
-  </div>
+      <!--END OF BODY-->
+      </div>
 
     <!--The Footer with all of my contact info. -->
     <footer class="container-fluid" id="contact">
@@ -259,7 +97,7 @@
               <div class="form-group">
                 <textarea class="form-control" id="message" rows="3" placeholder="Enter your message here"></textarea>
               </div>
-              <button type="submit" class="btn btn-secondary" name="sendFormBtn">Send</button>
+              <button id="sendBtn" type="submit" class="btn btn-secondary" name="sendFormBtn">Send</button>
             </form>
             </div>
             <div class="col-sm-6" style="font-family:'Quicksand', sans-serif">
@@ -274,11 +112,6 @@
         </div>
       </div>
     </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
     window.onscroll = function() {myFunction()};
     var navbar = document.getElementById("navbar");

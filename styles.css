@@ -12,7 +12,8 @@
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  z-index: 7;
 }
 
 .sticky + .content {
@@ -31,14 +32,11 @@
 .navbar-dark{
     background-color: #37474f;
     font-family: 'Quicksand', sans-serif;
-    z-index: 99;
+    z-index:7;
 }
 
 .navbar-collapse{
-  z-index: 99;
-}
-.nav-link{
-  text-align: right;
+  z-index: 1;
 }
 
 footer{
@@ -52,36 +50,6 @@ footer{
     background-color: #102027;
     color: white;
     box-shadow: none !important;
-}
-.btn-primary{
-  background-color: white;
-  border-color: black;
-  color:black;
-}
-
-.btn-primary:hover{
-  background-color: #ff9800;
-  border-color: white;
-  color: black;
-}
-
-.btn-secondary{
-  background-color: #102027;
-  border-color: white;
-  margin-left: 250px;
-  margin-bottom: 15px;
-}
-
-.btn-secondary:hover{
-  background-color: white;
-  border-color: black;
-  color: black;
-}
-
-.btn-secondary:active{
-  background-color: #ff9800 !important;
-  outline-color: #ff9800 !important;
-  box-shadow: none !important;
 }
 
 .socialMedia{
@@ -116,5 +84,10 @@ footer{
 }
 
 .card{
-  z-index: -1;
+  z-index: 0;
+  position: relative;
+}
+cardButton{
+  z-index: 0;
+  position: relative;
 }
