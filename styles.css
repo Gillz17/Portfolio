@@ -98,11 +98,30 @@ footer{
 }
 
 .btn-secondary:active{
-  background-color: #ff9800 !important;
-  outline-color: #ff9800 !important;
+  background-color: #ffb74d !important;
+  outline-color: #ffb74d !important;
   box-shadow: none !important;
 }
 
 .card-header{
-  background-color: #ff9800;
+  background-color: #ffb74d;
+}
+
+.btn-primary{
+  background-color: white;
+  color: black;
+  border-color: black;
+  box-shadow:none
+}
+.btn-primary:hover{
+  background-color: black;
+  color: white;
+  border-color: black;
+  box-shadow: none;
+}
+.btn-primary:active{
+  background-color: #ffb74d !important;
+  outline-color: #ffb74d !important;
+  box-shadow: none !important;
+  border-color: white;
 }
