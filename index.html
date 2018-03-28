@@ -63,13 +63,13 @@
             <a class="nav-link active" id="languages-tab" data-toggle="tab" href="#languages" role="tab" aria-controls="languages" aria-selected="true">Languages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="OS-tab" data-toggle="tab" href="#OS" role="tab" aria-controls="OS" aria-selected="false">Operating Systems</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" id="DB-tab" data-toggle="tab" href="#DB" role="tab" aria-controls="DB" aria-selected="false">Database Systems</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="EXP-tab" data-toggle="tab" href="#EXP" role="tab" aria-controls="EXP" aria-selected="false">Experience</a>
+            <a class="nav-link" id="OS-tab" data-toggle="tab" href="#OS" role="tab" aria-controls="OS" aria-selected="false">Operating Systems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="EXP-tab" data-toggle="tab" href="#EXP" role="tab" aria-controls="EXP" aria-selected="false">Tools</a>
           </li>
         </ul>
         <div class="tab-content" id="skillsTabContent">
@@ -283,8 +283,7 @@
                   <div class="card-header">Computer Hardware</div>
                   <div class="card-body">
                     <div class="card-text">
-                      <p>Built and maintained my own personal computer and the computers used by students, faculty, and staff.</p>
-                      <p>Need to work on the wording more.</p>
+                      <p>Built and maintained my own personal computer. Also helped support the computers used by students, faculty, and staff at my job.</p>
                     </div>
                     <div style="font-size:10em; color:#455a64;">
                       <i class="fas fa-desktop"></i>
@@ -295,7 +294,12 @@
                   <div class="card-header">Networking</div>
                   <div class="card-body">
                     <div class="card-text">
-                      <p>Concepts in TCP/IP</p>
+                      <ul style="list-style-type:none; text:center;">
+                        <li>TCP/IP</li>
+                        <li>Routing</li>
+                        <li>Networks</li>
+                      </ul>
+
                     </div>
                     <div style="font-size:10em; color:#0288d1;">
                       <i class="fas fa-globe"></i>
@@ -362,12 +366,14 @@
               <div class="card p-2 text-center">
                 <div class="card-header">Firebase</div>
                 <div class="card-body">
+                  <p>Used to store the data for my senior project.</p>
                   <img src="https://firebase.google.com/_static/images/firebase/touchicon-180.png" alt="Firebase Logo" style="width:250px;">
                 </div>
               </div>
               <div class="card p-2 text-center">
                 <div class="card-header">Amazon Web Service</div>
                 <div class="card-body">
+                  <p>This website is running on S3 and Route 53 within AWS.</p>
                   <div style="font-size:10em; color:#232F3E;">
                     <i class="fab fa-aws"></i>
                   </div>
@@ -413,7 +419,7 @@
               <div class="form-group">
                 <textarea class="form-control" id="message" rows="3" placeholder="Enter your message here"></textarea>
               </div>
-              <button id="sendBtn" type="submit" class="btn btn-secondary" name="sendFormBtn">Send</button>
+              <button id="sendBtn" type="submit" class="btn btn-secondary" name="sendFormBtn" onclick="LPAWS.sendToTopic();">Send</button>
             </form>
             </div>
             <div class="col-sm-6" style="font-family:'Quicksand', sans-serif">
