@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- TODO: Scrollspy to navigate the webpage -->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -11,13 +12,14 @@
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
+    <!--FontAwesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <!--My stylesheet-->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Zachary McGill</title>
 
-    <div class="hero-image">
-      <p>HELLO!</p>
-    </div>
+    <div class="hero-image"></div>
 
     <ul class="nav nav-tabs nav-fill" id="navbar">
       <li class="nav-item">
@@ -40,8 +42,10 @@
       <p class="lead">Hello this is my website.</p>
       <p>I am a recent graduate of the Univesity of Scranton where I got my degree in Computer Science.</p>
       <p>This website was created with the purpose of showing what I know and some of the projects that I have worked on/completed.</p>
-    </div>
+      <div style="height:1000px;">
 
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -49,8 +53,83 @@
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
   <footer>
     <!-- TODO: Add footer to the site with my links and contact form -->
+    <div class="container-fluid" style="padding-bottom: 25px;">
+      <div class="row" id="footerRow">
+        <div class="col-sm-4" style="margin-top: 25px;">
+          <!--INFO COLUMN-->
+          <address>Zachary McGill <br>
+            <a href="mailto:zmc17@ptd.net">Email me</a> <br>
+            P: (484) 602-0790
+          </address>
+          <!--LinkedIn Icon and link-->
+          <a href="https://www.linkedin.com/in/zachary-mcgill/"><i class="fab fa-linkedin"></i></a>
+          <!--Github Icon and link-->
+          <a href="https://github.com/Gillz17"><i class="fab fa-github"></i></a>
+          <!--Facebok Icon and link-->
+          <a href="https://www.facebook.com/zmcgill3"><i class="fab fa-facebook-square"></i></a>
+          <p style="color: #616161"><small>Copyright &copy 2018</small></p>
+          <!--End of Info-->
+        </div>
+        <div class="col-sm-4" style="margin-top: 25px;">
+          <h6>Navigate</h6>
+          <ul id="footerNav">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Test</a>
+            </li>
+            <li>
+              <a href="#">Test</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <!--End of navigation-->
+        </div>
+        <div class="col-sm-4" style="margin-top: 25px;">
+          <h6>Contact Me</h6>
+          <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="firstName"
+                  placeholder="Enter your first name here">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="lastName"
+                  placeholder="Enter your last name here">
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email"
+                placeholder="Enter your email here">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message here"></textarea>
+              </div>
+              <button id="sendBtn" type="submit" class="btn btn-secondary" name="sendFormBtn" onclick="LPAWS.sendToTopic();">Send</button>
+            </form>
+          <!-- End of contact form-->
+        </div>
+      </div>
+    </div>
   </footer>
 </html>
