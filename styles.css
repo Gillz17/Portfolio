@@ -1,6 +1,7 @@
 .hero-image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/code.jpg);
-  height:25%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../images/website.jpeg);
+  height:50%;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +9,96 @@
   position: relative;
 }
 
+#navbar{
+  background-color: #FAFAFA;
+  z-index: 4;
+}
+
 body, html{
   height: 100%;
-  background-color: #FFFFFF;
+  width: 100%;
+  color: #212121;
+  background-color: #FAFAFA;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.stick + .content{
+  padding-top: 60px;
+}
+
+h1{
+  text-align: center;
+}
+
+hr{
+    width: 75%;
+}
+
+#skills{
+  text-align: center;
+  width: 50%;
+  color: #212121;
+}
+
+.btn.btn-outline-primary,
+.btn.btn-outline-primary:hover{
+  color: #FFAB40;
+  border-color: #212121;
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.btn.btn-outline-primary:focus,
+.btn.btn-outline-primary:focus:active{
+  color: #212121 !important;
+  border-color: #212121 !important;
+  box-shadow: none !important;
+}
+
+footer{
+  background-color: #212121;
+  color:#FAFAFA;
+  z-index: 2px;
+}
+
+#footerRow{
+  margin: 50px 25px 0px 25px;
+}
+#footerNav{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover{
+  color: #FFAB40;
+}
+
+.fab{
+  padding: 0.25em;
+  font-size: 32px;
+  z-index: 2;
+}
+.fas{
+  font-size: 12px;
+}
+
+.fa-linkedin:hover{
+  color:#0077B5;
+}
+
+.fa-github:hover{
+  color:#FFFFFF;
+}
+
+.fa-facebook-square:hover{
+  color:#3B5998;
+}
+.form-control, .is-focused .custom-file-control, .is-focused .form-control {
+  color: #FFFFFF;
+  background-image: linear-gradient(0deg,#FFAB40 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
 }
