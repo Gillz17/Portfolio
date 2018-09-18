@@ -28,7 +28,10 @@
         <a class="nav-link" href="#skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Courses</a>
+        <a class="nav-link" href="#courses">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#contact">Contact</a>
@@ -36,20 +39,19 @@
     </ul>
   </head>
   <body>
-    <div class="container-fluid">
-      <h1 id="nameTitle" style="color:#212121;"><br>Zachary McGill</h1>
+    <div class="container-fluid" data-spy="scroll" data-target="navbar" data-offset="0">
+      <h1 class="display-3" id="nameTitle" style="color:#212121;"><br>Zachary McGill</h1>
       <br>
       <p style="text-align:center;">I am a recent graduate of the Univesity of Scranton where I got my bachelors degree in Computer Science. <br>
       This website was created with the purpose of showing what I know and some of the projects that I have worked on/completed.</p>
-      <br><hr style="width:75%;"><br>
+      <br><hr style="width:75%;"><br><a id="skills"></a>
       <p style="text-align:center">I have worked with a number of languages, databases, networking concepts, hardware, and operating systems.<br>
-      The buttons below will take you to the projects or experience I have in that topic.  There is also a contact form <br>
-      at the bottom of the page if you would like to contact me to find out more.</p>
+      The buttons below will take you to the projects or experience I have in that topic.</p>
       <br>
     <!--END OF CONTENT DIV-->
     </div>
     <!-- TODO: Fill in the rest of the content into their cards -->
-    <div class="container-fluid" id="skills">
+    <div class="container-fluid" id="skillsContent">
       <div class="row">
         <div class="col">
           <button type="button" class="btn btn-outline-primary" data-toggle="collapse"
@@ -66,30 +68,31 @@
           data-target="#cssInfo" aria-expanded="false" aria-controls="cssInfo" name="cssButton" id="cssBtn">
             <i class="fas fa-plus"></i>&ensp;CSS</button>
         </div>
-      <div class="collapse" id="javaInfo">
-        <div class="card card-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <br>
+        <div class="collapse" id="javaInfo">
+          <div class="card card-body">
+            I've used JAVA the most.  It was used and taught in school.
+          </div>
         </div>
-      </div>
-      <div class="collapse" id="htmlInfo">
-        <div class="card card-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="collapse" id="htmlInfo">
+          <div class="card card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
         </div>
-      </div>
-      <div class="collapse" id="cssInfo">
-        <div class="card card-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="collapse" id="cssInfo">
+          <div class="card card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
         </div>
+        <!--End of row-->
       </div>
-    <!--End of row-->
-    </div>
-    <br>
-    <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-outline-primary" data-toggle="collapse"
-        data-target="#cInfo" aria-expanded="false" aria-controls="cInfo" name="Cbutton" id="cBtn">
-          <i class="fas fa-plus"></i>&ensp;C/C++</button>
-      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-outline-primary" data-toggle="collapse"
+          data-target="#cInfo" aria-expanded="false" aria-controls="cInfo" name="Cbutton" id="cBtn">
+            <i class="fas fa-plus"></i>&ensp;C/C++</button>
+        </div>
 
       <div class="col">
         <button type="button" class="btn btn-outline-primary" data-toggle="collapse"
@@ -130,8 +133,8 @@
         </div>
       </div>
     </div>
-    <br><br>
-    <div class="row">
+      <br><br>
+      <div class="row">
       <div class="col">
         <button type="button" class="btn btn-outline-primary" data-toggle="collapse"
         data-target="#dbInfo" aria-expanded="false" aria-controls="dbInfo" name="dbButton" id="dbBtn">
@@ -157,29 +160,126 @@
       </div>
 
     </div>
-    <div class="collapse" id="dbInfo">
+      <div class="collapse" id="dbInfo">
+      <div class="card card-body">
+        I learned MySql back in high school and learned PostgreSQL in college.  &ensp;In college, I also learned about the complexites of relational databases.
+      </div>
+    </div>
+      <div class="collapse" id="netInfo">
+      <div class="card card-body">
+        I took Introduction to Networking in college. &ensp;I learned about IP/TCP OSI basics and the concepts of switching and networking.
+        &ensp;There was also a lesson on network security.
+      </div>
+    </div>
+      <div class="collapse" id="hardInfo">
+      <div class="card card-body">
+        I took a class called Computer Archietecture, which was focused on the lowest level, bits.
+        &ensp;I worked at the Univesity of Scranton Technology Support Center where I was able to work with computer hardware.
+        &ensp;I have also built my own computer which gave me great hands on experience with hardware.
+        <a href="https://pcpartpicker.com/user/gazump17/saved/T8jWD3">My Computer</a>
+      </div>
+    </div>
+      <div class="collapse" id="osInfo">
       <div class="card card-body">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
     </div>
-    <div class="collapse" id="netInfo">
-      <div class="card card-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <!--End of Skills-->
+    </div>
+    <br><a id="courses"></a><hr style="width:75%;"><br>
+    <div id="coursesContent">
+      <h4 class="display-4">&emsp;Courses</h4>
+      <p class="text-muted" style="text-align:center;">A description of the program and a general timeline can be found in the <a href="http://catalog.scranton.edu/preview_program.php?catoid=40&poid=6702">catalog</a>. <br>
+      You can click on the title of the courses to read the descriptions of the class.</p>
+      <hr>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#dsaInfo" aria-expanded="false" aria-controls="dsaInfo"><h6 class="lead">&emsp;Data Structures and Algorithms</h6></a>
+      <div class="collapse" id="dsaInfo">
+        <div>
+          <p>An examination of the issues of data representation, algorithm structure, and encapsulation as they pertain to the development of object-oriented software.  Abstract data types studied include stacks, queues, binary trees, n-ary trees, and graphs. Various representation alternatives are analyzed and compared, trade-offs frequently encountered by software developers are discussed.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#moalpInfo" aria-expanded="false" aria-controls="moalpInfo"><h6 class="lead">&emsp;Machine Organization and Assembly Language Programming</h6></a>
+      <div class="collapse" id="moalpInfo">
+        <div>
+          <p>An introductory study of the organization and architecture of computers through an exploration of various virtual machines. Programming at the assembly-language level and interfacing with software components (primarily written in C). Topics include representation of data and instructions, computer arithmetic, memory hierarchies, instruction sets, addressing modes, digital logic, microprogramming, pipelining, and parallel processing.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#tfcsInfo" aria-expanded="false" aria-controls="tfcsInfo"><h6 class="lead">&emsp;Theoretical Foundations of Computer Science</h6></a>
+      <div class="collapse" id="tfcsInfo">
+        <div>
+          <p>An examination of the fundamental models and concepts of computation – automata, formal languages, and grammars – and how they are related.  Church-Turing thesis; recursive and recursively enumerable sets; unsolvable problems; complexity of algorithms; Chomsky hierarchy.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#cosInfo" aria-expanded="false" aria-controls="cosInfo"><h6 class="lead">&emsp;Operating Systems</h6></a>
+      <div class="collapse" id="cosInfo">
+        <div>
+          <p>An introduction to the principles of operating systems.  Topics include operating system structure, process management, scheduling and dispatching, process synchronization and interprocess communication, memory management, virtual memory, device management, I/O, and file systems.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#plInfo" aria-expanded="false" aria-controls="plInfo"><h6 class="lead">&emsp;Programming Languages</h6></a>
+      <div class="collapse" id="plInfo">
+        <div>
+          <p>A study of programming languages from both the theoretical and practical perspectives.  A survey of major and developing paradigms and languages is undertaken which includes use of specific languages to broaden the student’s experience.  Implementation is studied through an introduction to language translation along with a study of run-time models and interfaces with virtual machines.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#idbInfo" aria-expanded="false" aria-controls="idbInfo"><h6 class="lead">&emsp;Introduction to Database</h6></a>
+      <div class="collapse" id="idbInfo">
+        <div>
+          <p>File structures concepts and file processing applications.  Topics include file maintenance and storage management; file searching, sorting, and merging; consequential processing; index structures; B-trees; hash tables; indexed sequential files; database concepts.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#caInfo" aria-expanded="false" aria-controls="caInfo"><h6 class="lead">&emsp;Computer Archietecture</h6></a>
+      <div class="collapse" id="caInfo">
+        <div>
+          <p>A study of the logical structure of computer-system organization including a survey of logic and design with an emphasis on functional components.  Topics include instruction sets, hard-wired and microprogrammed control-unit designs, memory systems (caches and virtual memory), I/O systems (interrupts, DMA, and channels).  Overview and examples of alternative and advanced computer architectures (pipeline, array processors, multiprocessors).</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#fseInfo" aria-expanded="false" aria-controls="fseInfo"><h6 class="lead">&emsp;Fundamentals of Software Engineering</h6></a>
+      <div class="collapse" id="fseInfo">
+        <div>
+          <p>An introduction to the concepts of Software Engineering.  Stress is placed upon formal models for the design and development of high-quality software.  Topics include: project planning, requirements analysis, system design, program design, program implementation, program testing, system testing, system delivery, and maintenance.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#cpInfo" aria-expanded="false" aria-controls="cpInfo"><h6 class="lead">&emsp;Computer Projects</h6></a>
+      <div class="collapse" id="cpInfo">
+        <div>
+          <p>In this course, students prepare and present individual computer projects to be evaluated by the instructor and their fellow students.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#dbsInfo" aria-expanded="false" aria-controls="dbsInfo"><h6 class="lead">&emsp;Database Systems</h6></a>
+      <div class="collapse" id="dbsInfo">
+        <div>
+          <p>An introduction to database management systems with an emphasis on relational database design and applications.  It uses an appropriate database package such as ORACLE or PostgreSQL.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#dcnInfo" aria-expanded="false" aria-controls="dcnInfo"><h6 class="lead">&emsp;Data Communications and Networks</h6></a>
+      <div class="collapse" id="dcnInfo">
+        <div>
+          <p>A study of data communication and networking concepts, including distributed-system architectures, electronic interfaces, data-transmission, data link protocols, terminal networks, computer communication, public-data networks, and local-area networks.</p>
+        </div>
+      </div>
+      <br>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#wpInfo" aria-expanded="false" aria-controls="wpInfo"><h6 class="lead">&emsp;Web Programming</h6></a>
+      <div class="collapse" id="wpInfo">
+        <div>
+          <p>This course covers all aspects of programming on the World Wide Web.  This includes the presentation of HTML, Java, JavaScript and CGI.  Topics include advanced HTML (maps, forms, etc.) client-server programming basics as they relate to the Web, Java machine concepts, Java/JavaScript similarities and differences, server-side programming, GIF animations, Web programming resources and environments.</p>
+        </div>
       </div>
     </div>
-    <div class="collapse" id="hardInfo">
-      <div class="card card-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-    </div>
-    <div class="collapse" id="osInfo">
-      <div class="card card-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-    </div>
-    <!--End of Skills-->
-  </div>
 
+    <div id="projects">
+      <h4 class="display-4">Projects</h4>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -267,7 +367,7 @@
               <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#">Courses</a>
+              <a href="#courses">Courses</a>
             </li>
             <li>
               <a href="#contact">Contact</a>

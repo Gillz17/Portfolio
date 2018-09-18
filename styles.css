@@ -27,17 +27,32 @@ body, html{
   width: 100%;
 }
 .stick + .content{
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 h1{
   text-align: center;
 }
 
-#skills{
+#skillsContent{
   text-align: center;
   width: 50%;
   color: #212121;
+}
+
+#coursesContent{
+  margin: auto;
+  width: 75%;
+}
+.btn.btn-primary,
+.btn.btn-primary:hover{
+  white-space: normal;
+  color: #212121;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:focus:active{
+  color: #212121 !important;
 }
 
 .btn.btn-outline-primary,
