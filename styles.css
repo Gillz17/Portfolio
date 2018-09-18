@@ -70,6 +70,32 @@ h1{
   box-shadow: none !important;
 }
 
+.btn.btn-info,
+.btn.btn-info:hover{
+  white-space: normal;
+  color: #FFAB40;
+}
+.btn.btn-info:focus,
+.btn.btn-info:focus:active{
+  color: #212121 !important;
+  border-color: #212121 !important;
+  box-shadow: none !important;
+}
+
+#projects{
+  width: 75%;
+  margin: auto;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}
+
 footer{
   background-color: #212121;
   color:#FAFAFA;
@@ -89,20 +115,16 @@ a, a:hover{
   color: #FFAB40;
 }
 
-.fab{
+.fab, .fas{
   padding: 0.25em;
   font-size: 32px;
   z-index: 2;
 }
-.fas{
-  font-size: 12px;
-}
-
 .fa-linkedin:hover{
   color:#0077B5;
 }
 
-.fa-github:hover{
+#footerGithub:hover{
   color:#FFFFFF;
 }
 

@@ -276,9 +276,46 @@
         </div>
       </div>
     </div>
-
+    <br><hr style="width:75%;"><br>
     <div id="projects">
       <h4 class="display-4">Projects</h4>
+      <br>
+      <div class="card-columns">
+        <!--Meeting Time card-->
+        <div class="card">
+          <div class="card-header lead">Meeting Time</div>
+          <div class="card-body">
+            <p class="card-text">This application was completed based on the requirements of the Computer Projects class.  The purpose of the application was to give people
+            the ability to enter times that they were busy and then the system would pick out a time when everyone in their group was free.  This would allow them to schedule
+            a time when most or everyone was available.  There is a link to the Github repo for the source and a link to the documentation.</p>
+            <a class="btn btn-info" href="https://github.com/Gillz17/MeetingTime" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="btn btn-info" href="https://drive.google.com/drive/folders/0B1o_gTCTMxhjRnR6Ym00X2t3YVk?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i></a>
+          </div>
+        </div>
+
+        <!--Portfolio card-->
+        <div class="card">
+          <div class="card-header lead">Portfolio</div>
+          <div class="card-body">
+            <p class="card-text">The portfolio project is actually what you are looking at right now.  I completed this website once and was not happy with how it turned out
+            the first time.  The first design was cluttered and not very intuitive.  The website was created using HTML/CSS and Bootstrap.  The website is hosted on AWS S3
+            and the form uses a Lambda function to send an email.</p>
+            <a class="btn btn-info" href="https://github.com/Gillz17/Portfolio" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!--MyHikes card-->
+        <div class="card">
+          <div class="card-header lead">MyHikes</div>
+          <div class="card-body">
+            <p class="card-text">This application was completed based on the requirements of the Database Systems class.  The purpose of the application was to
+            record a persons hike.  The user would enter a date, time, and place where they went on this hike.  The application would record that hike by storing
+            the information in a PostgreSQL database.  This was written in a team of 3 (including myself) using Java and JDBC.</p>
+            <a class="btn btn-info" href="cmps341-myHikes.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+          </div>
+        </div>
+        <!--End card column-->
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -339,7 +376,6 @@
   <!--END OF BODY-->
   </body>
   <footer>
-    <!-- TODO: Add footer to the site with my links and contact form -->
     <div class="container-fluid" style="padding-bottom: 25px;">
       <div class="row" id="footerRow">
         <div class="col-sm-4" style="margin-top: 25px;">
@@ -349,12 +385,13 @@
             P: (484) 602-0790
           </address>
           <!--LinkedIn Icon and link-->
-          <a href="https://www.linkedin.com/in/zachary-mcgill/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/zachary-mcgill/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <!--Github Icon and link-->
-          <a href="https://github.com/Gillz17"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/Gillz17" target="_blank"><i class="fab fa-github" id="footerGithub"></i></a>
           <!--Facebok Icon and link-->
-          <a href="https://www.facebook.com/zmcgill3"><i class="fab fa-facebook-square"></i></a>
-          <p style="color: #616161"><small>Copyright &copy 2018</small></p>
+          <a href="https://www.facebook.com/zmcgill3" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <br><br>
+          <p style="color: #616161"><small>Copyright &copy 2018 Zachary McGill <br>All Rights Reserved.</small></p>
           <!--End of Info-->
         </div>
         <div class="col-sm-4" style="margin-top: 25px;">
@@ -368,6 +405,9 @@
             </li>
             <li>
               <a href="#courses">Courses</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
